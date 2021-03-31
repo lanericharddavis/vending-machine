@@ -12,21 +12,58 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">vending-machine</span>
+                <span class="ml-2">Lane's Vending Machine</span>
             </a>
         </nav>
     </header>
+
     <main>
-        <div id="app"></div>
+        <div class="row py-2">
+            <div class="col-6 text-center">
+                <img src="https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/4:3/w_3004,h_2253,c_limit/milk-bread.jpg"
+                    alt="" width=175>
+                <p>$1.50</p>
+                <button onclick="app.vendValuesController.addItem(1.50)">Add Bread</button>
+            </div>
+            <div class="col-6 text-center">
+                <img src="https://static.onecms.io/wp-content/uploads/sites/24/2018/11/bologna.jpg" alt="" width=200>
+                <p>$2.00</p>
+                <button onclick="app.vendValuesController.addItem(2.00)">Add Bologna</button>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-6 text-center">
+                <img src="https://media.istockphoto.com/photos/the-cheddar-cheese-picture-id685847528?k=6&m=685847528&s=612x612&w=0&h=aYd19-8dYRAtval1sEU9QY50Mt1KX2I1rbG9KvLf2Ok="
+                    alt="" width=200>
+                <p>$.50</p>
+                <button onclick="app.vendValuesController.addItem(.50)">Add Cheese</button>
+            </div>
+            <div class="col-6 text-center">
+                <img src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/cm/15/12/480x552/5508e9bb6b9a7-0312-water-bottle-xl.jpg?resize=480:*"
+                    alt="" width=150>
+                <p>$1.25</p>
+                <button onclick="app.vendValuesController.addItem(1.25)">Add Water</button>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-2"></div>
+            <div class="col-2">
+                <h4 id="moneyAmount">$0.00</h4>
+                <button onclick="app.vendValuesController.addQuarters()">Insert Quarters</button>
+                <button onclick="app.vendValuesController.purchase()" class="my-2">Purchase & Vend</button>
+            </div>
+        </div>
     </main>
+
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
             <div class="col">
-                <p><small>Made with love by Codeworks</small></p>
+                <p><small>Created by Lane Davis</small></p>
             </div>
         </div>
     </footer>

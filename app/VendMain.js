@@ -2,11 +2,10 @@ import VendValuesController from "./Controllers/VendValuesController.js";
 
 
 
-//Entry point into the application
-//starts up all of our controllers
-//connects ..
+console.log(1)
 class App {
   vendValuesController = new VendValuesController()
 }
+
 
 window["app"] = new App();
