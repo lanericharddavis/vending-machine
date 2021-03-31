@@ -50,12 +50,14 @@
                 <button onclick="app.vendValuesController.addItem(1.25)">Add Water</button>
             </div>
         </div>
-        <div class="row justify-content-between">
-            <div class="col-2"></div>
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <button onclick="app.vendValuesController.addQuarters()" class="btn btn-info">Insert Quarters</button>
+                <button onclick="app.vendValuesController.purchase()" class="btn btn-danger my-2">Purchase &
+                    Vend</button>
+            </div>
             <div class="col-2">
                 <h4 id="moneyAmount">$0.00</h4>
-                <button onclick="app.vendValuesController.addQuarters()">Insert Quarters</button>
-                <button onclick="app.vendValuesController.purchase()" class="my-2">Purchase & Vend</button>
             </div>
         </div>
     </main>
